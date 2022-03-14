@@ -133,10 +133,10 @@ GAME SECTION
 .gameSec .container .gameDiv .gameWindow .square{
   cursor: pointer;
   position: absolute;
-  background-color: rgb(66, 7, 122);
   inset: 0% auto auto 0%;
   width: 7vh;
   height: 7vh;
+  border-radius: 100%;
 
   display: none;
 }
