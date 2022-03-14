@@ -137,7 +137,7 @@ GAME SECTION
   align-items: center;
 }
 
-.gameSec .container .scoreDiv .square{
+.gameSec .container .scoreDiv .tab{
   background:var(--color3);
   width: 90%;
   height: 70%;
