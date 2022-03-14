@@ -106,7 +106,7 @@ GAME SECTION
   background: var(--color1);
   border-radius: 20px;
   outline: none;
-  font-size: 2em;
+  font-size: 4vh;
   color: white;
   transition: 250ms;
 }
