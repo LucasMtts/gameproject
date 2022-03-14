@@ -38,7 +38,7 @@ main .buttonDiv{
 }
 
 main .buttonDiv button{
-  padding: 40px 80px;
+  padding: 3vh 6vw;
   margin-bottom: 20px;
   cursor: pointer;
   border: none;
@@ -98,7 +98,7 @@ GAME SECTION
 }
 
 .gameSec .container .gameDiv .gameButtons button{
-  padding: 20px 50px;
+  padding: 2vh 4vw;
   margin: 0 30px;
   cursor: pointer;
   border: none;
@@ -129,7 +129,18 @@ GAME SECTION
 
 
 
+.gameSec .container .scoreDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.gameSec .container .scoreDiv .square{
+  background:var(--color3);
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
+}
 
 
 
