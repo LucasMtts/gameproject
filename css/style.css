@@ -134,6 +134,8 @@ GAME SECTION
   inset: 73% auto auto 42%;
   width: 7vh;
   height: 7vh;
+
+  display: none;
 }
 
 .gameSec .container .scoreDiv{
