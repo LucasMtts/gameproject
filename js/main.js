@@ -11,13 +11,14 @@ document.getElementById("start").addEventListener('click', startGame);
 
 // FUNCTION
 function startGame(){
-   attScore();
-   document.getElementById("enemy1").style.display = "flex"
+    attScore();
+    generatePosition();
+    document.getElementById("enemy1").style.display = "flex"
 }
 
 function kill (){
     point++;
-   attScore();
+    attScore();
     
     document.getElementById("enemy1").style.display = "none";
 }
@@ -32,3 +33,18 @@ function attScore() {
     pointView.innerText = `Points: ${point}`;
     lifesView.innerText = `Lifes: ${life}`;
 }
+
+function generatePosition() {
+    let x = getRandomInt();
+    let y = getRandomInt();
+
+    console.log(x,y);
+
+    document.getElementById("enemy1").style.inset = `${x}% auto auto ${y}%`;
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(0);
+    max = Math.floor(90);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }

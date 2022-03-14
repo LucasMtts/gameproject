@@ -134,7 +134,7 @@ GAME SECTION
   cursor: pointer;
   position: absolute;
   background-color: rgb(66, 7, 122);
-  inset: 73% auto auto 42%;
+  inset: 0% auto auto 0%;
   width: 7vh;
   height: 7vh;
 
