@@ -18,8 +18,12 @@ function startGame(){
 }
 
 function kill (){
+    stopTimer();
     point++;
     attScore();
+    if(point == 100){
+        document.getElementById("GW").classList.add('redBorder');
+    }
     
     document.getElementById("enemy1").style.display = "none";
     generatePosition();
@@ -38,12 +42,16 @@ function attScore() {
     lifesView.innerText = `Lifes: ${life}`;
 }
 
+/*
 function spawnEnemy() {
-    setTimeout(() =>{
+    let timeSet = setTimeout(() =>{
         
         generatePosition();
      }, timer);
+
+     return(timeSet);
 }
+*/
 
 function generatePosition() {
     let x = getRandomInt();
@@ -56,4 +64,8 @@ function getRandomInt(min, max) {
     min = Math.ceil(0);
     max = Math.floor(90);
     return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function stopTimer() { // stop the TIMER
+    clearTimeout(timeSet);
 }
