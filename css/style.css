@@ -154,8 +154,18 @@ GAME SECTION
   width: 7vh;
   height: 7vh;
   border-radius: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   display: none;
+}
+
+.gameSec .container .gameDiv .gameWindow .square img{
+  pointer-events: none;
 }
 
 .gameSec .container .scoreDiv{
