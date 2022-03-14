@@ -94,7 +94,8 @@ GAME SECTION
 }
 
 .gameSec .container .gameDiv .gameButtons{
-  margin-top: 30px;
+  position: absolute;
+  bottom: 4vh;
 }
 
 .gameSec .container .gameDiv .gameButtons button{
@@ -138,7 +139,7 @@ GAME SECTION
 .gameSec .container .scoreDiv .square{
   background:var(--color3);
   width: 90%;
-  height: 80%;
+  height: 70%;
   border-radius: 20px;
 }
 
