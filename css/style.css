@@ -99,7 +99,7 @@ GAME SECTION
 }
 
 .gameSec .container .gameDiv .gameButtons button{
-  padding: 2vh 4vw;
+  padding: 1vh 2vw;
   margin: 0 30px;
   cursor: pointer;
   border: none;
