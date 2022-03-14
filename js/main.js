@@ -4,6 +4,7 @@ let lifesView = document.getElementById('lifes');
 let life = 3;
 let point = 0;
 let timer = 5000;
+let start = false;
 
 // EVENTS
 document.getElementById("enemy1").addEventListener("click", kill); 
@@ -12,13 +13,17 @@ document.getElementById("start").addEventListener('click', startGame);
 
 // FUNCTION
 function startGame(){
-    attScore();
-    generatePosition();
-    document.getElementById("enemy1").style.display = "flex"
+    if(start == false){
+        start = true;
+        attScore();
+        generatePosition();
+        document.getElementById("enemy1").style.display = "flex"
+    }else {
+        console.log("ERROR");
+    }
 }
 
 function kill (){
-    stopTimer();
     point++;
     attScore();
     if(point == 100){
@@ -31,6 +36,7 @@ function kill (){
 }
 
 function resetGame() {
+    start = false;
     life = 3;
     point = 0;
     attScore();
