@@ -1,0 +1,168 @@
+:root{
+  --bg-color: rgb(80, 80, 80) ;
+  --color1: rgb(0, 110, 255) ;
+  --color2: rgb(0, 204, 255);
+  --color3: rgb(24, 24, 24) ;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--bg-color) ;
+  font-family: sans-serif;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+
+  display: none;
+}
+
+main .buttonDiv{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .buttonDiv button{
+  padding: 40px 80px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  background: var(--color1);
+  border-radius: 20px;
+  outline: none;
+  font-size: 2em;
+  color: white;
+  transition: 250ms;
+}
+
+main .buttonDiv button:hover{
+  background: var(--color2);
+  box-shadow: 0 0 30px var(--color2);
+}
+
+main .intro {
+  position: absolute;
+  text-align: center;
+  top: 5vh;
+}
+
+main .intro h1{
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+
+
+/*
+************
+GAME SECTION 
+************
+*/
+
+.gameSec .container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gameSec .container .tutorialDiv,
+.gameSec .container .scoreDiv{
+  width: 20vw;
+}
+
+.gameSec .container .gameDiv{
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameSec .container .gameDiv .gameButtons{
+  margin-top: 30px;
+}
+
+.gameSec .container .gameDiv .gameButtons button{
+  padding: 20px 50px;
+  margin: 0 30px;
+  cursor: pointer;
+  border: none;
+  background: var(--color1);
+  border-radius: 20px;
+  outline: none;
+  font-size: 2em;
+  color: white;
+  transition: 250ms;
+}
+
+.gameSec .container .gameDiv .gameButtons button:hover{
+  background: var(--color2);
+  box-shadow: 0 0 30px var(--color2);
+}
+
+
+.gameSec .container .gameDiv .gameWindow{
+  background-image: url(../assets/img/gamebg.jpg);
+  background-size: cover;
+  width:100%;
+  height: 70%;
+  border: 7px solid var(--color3);
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--color3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  inset: auto 0 0 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
