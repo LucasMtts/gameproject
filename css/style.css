@@ -142,7 +142,26 @@ GAME SECTION
   border-radius: 20px;
 }
 
+.gameSec .container .scoreDiv .tab img{
+  width: 10vh;
+  height: 10vh;
+}
 
+.gameSec .container .scoreDiv .tab .scorePoints,
+.gameSec .container .scoreDiv .tab .lifePoints{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2em;
+}
+
+.gameSec .container .scoreDiv .tab .scorePoints p,
+.gameSec .container .scoreDiv .tab .lifePoints p{
+  margin-top: 1vh;
+}
 
 
 
