@@ -95,7 +95,7 @@ GAME SECTION
 
 .gameSec .container .gameDiv .gameButtons{
   position: absolute;
-  bottom: 4vh;
+  bottom: 5vh;
 }
 
 .gameSec .container .gameDiv .gameButtons button{
