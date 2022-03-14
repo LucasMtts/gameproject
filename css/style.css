@@ -129,11 +129,22 @@ GAME SECTION
   border-radius: 10px;
   border: 7px solid var(--color3);
   box-shadow: 0 0 20px var(--color3);
+  transition: 1000ms;
 }
 
-.gameSec .container .gameDiv .gameWindow .redBorder{
-  border: 7px solid var(--color4);
-  box-shadow: 0 0 20px var(--color4);
+@keyframes pulse{
+  0%{
+    border: 7px solid var(--color3);
+    box-shadow: 0 0 10px var(--color3);
+  }
+  50%{
+    border: 7px solid rgb(250, 52, 52);
+    box-shadow: 0 0 30px rgb(255, 46, 46);
+  }
+  100%{
+    border: 7px solid var(--color3);
+    box-shadow: 0 0 10px var(--color3);
+  }
 }
 
 .gameSec .container .gameDiv .gameWindow .square{

@@ -18,11 +18,10 @@ function startGame(){
 }
 
 function kill (){
-    stopTimer();
     point++;
     attScore();
-    if(point == 100){
-        document.getElementById("GW").classList.add('redBorder');
+    if(point === 100){
+        document.getElementById("GW").style.animation = "pulse 3s infinite linear"
     }
     
     document.getElementById("enemy1").style.display = "none";
