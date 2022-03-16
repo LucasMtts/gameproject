@@ -2,7 +2,7 @@
   --bg-color: rgb(80, 80, 80) ;
   --color1: rgb(0, 110, 255) ;
   --color2: rgb(0, 204, 255);
-  --color3: rgb(24, 24, 24) ;
+  --color3: rgb(46, 19, 13) ;
   --color4: rgb(255, 20, 20);
 }
 
@@ -17,9 +17,13 @@ html{
 }
 
 body{
-  background: var(--bg-color) ;
+  background: url(../assets/img/minetunnelimage.jpg) ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   font-family: sans-serif;
   overflow: hidden;
+  color: white;
 }
 
 main{
@@ -88,6 +92,14 @@ GAME SECTION
   width: 20vw;
 }
 
+
+
+/******************************************
+***************GAME BOARD******************
+*******************************************/
+
+
+
 .gameSec .container .gameDiv{
   position: relative;
   width: 60vw;
@@ -95,6 +107,49 @@ GAME SECTION
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.gameSec .container .gameDiv::after{
+  content:'qualquer coisa';
+  background-image: url(../assets/img/woodback.jpg);
+  background-size: cover;
+  width:100%;
+  height: 70%;
+  position: absolute;
+  transform: scaleY(1.04) scaleX(1.02);
+  z-index: -2;
+  color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--color3);
+}
+
+.gameSec .container .gameDiv .limit{
+  width:100%;
+  height: 70%;
+  transform: scaleY(1.04) scaleX(1.02);
+  position: absolute;
+  overflow: hidden;
+}
+
+.gameSec .container .gameDiv .limit::before{
+  content: 'qualquer coisa';
+  width: 100px;
+  height: 2000px;
+  background: white;
+  filter: blur(40px);
+  position: absolute;
+  left: 45%;
+  top: -100%;
+  animation: spin 5s infinite linear;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .gameSec .container .gameDiv .gameButtons{
@@ -127,9 +182,7 @@ GAME SECTION
   width:100%;
   height: 70%;
   border-radius: 10px;
-  border: 7px solid var(--color3);
-  box-shadow: 0 0 20px var(--color3);
-  transition: 1000ms;
+  border: 1px solid var(--color3);
 }
 
 @keyframes pulse{
@@ -154,19 +207,20 @@ GAME SECTION
   width: 7vh;
   height: 7vh;
   border-radius: 100%;
+  display: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
-  display: none;
 }
 
-.gameSec .container .gameDiv .gameWindow .square img{
-  pointer-events: none;
-}
+
+/******************************************
+***************SCORE BOARD*****************
+*******************************************/
+
 
 .gameSec .container .scoreDiv{
   display: flex;
@@ -175,10 +229,11 @@ GAME SECTION
 }
 
 .gameSec .container .scoreDiv .tab{
-  background:var(--color3);
-  width: 90%;
+  width: 85%;
   height: 70%;
   border-radius: 20px;
+  background-image: url(../assets/img/woodtab.jpg);
+  background-size: cover;
 }
 
 .gameSec .container .scoreDiv .tab img{
