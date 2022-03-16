@@ -18,7 +18,7 @@ function startGame(){
 }
 
 function kill (){
-    stopTimer();
+    // stopTimer();
     point++;
     attScore();
     if(point == 100){

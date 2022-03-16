@@ -9,44 +9,52 @@
 	</head>
 
 	<body>
-  		<main id="mainPage" class="">
-    		<div class="intro">
-      			<h1>nome do jogo</h1>
-    		</div>
-
-    		<div class="buttonDiv">
-      			<a href="#gamePage" onclick="displayNone()">
-              Play!
-            </a>
-            <div class="popup">
-              <p>
-                A point click game, produced with the intention of learning more about programming.
-              </p>
-            </div>
-    		</div>
-  		</main>
-
+  <main id="mainPage" class="">
+    <!-- \/ nome do jogo \/  -->
+    <div class="intro">
+        <h1>nome do jogo</h1>
+    </div>
+    <!-- \/ botao play \/ -->
+    <div class="buttonDiv">
+        <a href="#gamePage">
+          Play!
+        </a>
+        <div class="popup">
+          <p>
+            A point click game, produced with the intention of learning more about programming.
+          </p>
+        </div>
+    </div>
+  </main>
   <section class="gameSec displayNone" id="gamePage">
+    <!-- \/ toda a tela que compoe a sessão \/ -->
     <div class="container">
       <div class="tutorialDiv">
       </div>
+      <!-- \/ divisao da tela onde fica o jogo \/ -->
       <div class="gameDiv">
+        <!-- \/ tela do jogo \/ -->
+        <div class="limit"></div>
         <div class="gameWindow grayBorder" id="GW">
           <div class="square" id="enemy1">
             <img src="./assets/img/coin.png" alt="">
           </div>
         </div>
+        <!-- \/ botoes abaixo do jogo \/ -->
         <div class="gameButtons">
           <button id="start">Start</button>
           <button id="reset">Reset</button>
         </div>
       </div>
+      <!-- \/ tabela de pontos \/ -->
       <div class="scoreDiv">
         <div class="tab">
+          <!-- \/ score counter \/ -->
           <div class="scorePoints">
             <img src="./assets/img/coin.png" alt="">
             <p id="points">Points: 0</p>
           </div>
+          <!-- \/ life counter \/ -->
           <div class="lifePoints">
             <img src="./assets/img/heart.png" alt="">
             <p id="lifes">Lifes: 3</p>
@@ -54,6 +62,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
 
